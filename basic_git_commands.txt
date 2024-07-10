@@ -1,0 +1,9 @@
+Basic git commands
+
+1. Use 'git add .' to add all new changes to the staging.
+
+2. Use 'git commit -m "commit message"' to commit changes to the git.
+
+3. Use 'git pull' to download latest changes in github.
+
+4. Use 'git push -u origin' to upload your latest commit to github.

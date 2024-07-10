@@ -1,0 +1,264 @@
+Employee_ID,Username,StartDay,StartMonth,Start,EndDay,End,Type,Reason,Status,Overseas,Coworker,OverseasContact
+8637,AaroReyn,26,5,26/5/2024,28,28/5/2024,2,Leave reason,Cancelled,0,MichWall,
+8637,AaroReyn,1,5,1/5/2024,2,2/5/2024,3,Leave reason,Deleted,0,JamiDunn,
+8637,AaroReyn,13,7,13/7/2024,15,15/7/2024,3,Leave reason,Applied,0,BriaAnde,
+9003,AdamAgui,25,8,25/8/2024,26,26/8/2024,1,Leave reason,Rejected,0,DonaShor,
+9003,AdamAgui,5,3,5/3/2024,7,7/3/2024,3,Leave reason,Approved,1,KimbBara,(10) 91581827
+9003,AdamAgui,4,1,4/1/2024,7,7/1/2024,2,Leave reason,Deleted,1,HeatCars,(60) 19365442
+9003,AdamAgui,16,3,16/3/2024,17,17/3/2024,1,Leave reason,Deleted,1,MarcOwen,(57) 10388287
+1709,AmanDavi,20,11,20/11/2024,23,23/11/2024,3,Leave reason,Applied,0,DeboMann,
+4826,AmanPhil,22,5,22/5/2024,23,23/5/2024,3,Leave reason,Rejected,1,KerrGarc,(72) 50666038
+4826,AmanPhil,15,4,15/4/2024,17,17/4/2024,2,Leave reason,Approved,1,JasoJame,(20) 66355419
+4826,AmanPhil,4,9,4/9/2024,5,5/9/2024,3,Leave reason,Approved,0,BranMyer,
+7246,AmbeFrie,26,7,26/7/2024,28,28/7/2024,3,Leave reason,Deleted,0,ChriGome,
+7246,AmbeFrie,18,6,18/6/2024,20,20/6/2024,2,Leave reason,Approved,1,DonaMorr,(49) 30756685
+8073,AmyBarn,4,1,4/1/2024,7,7/1/2024,2,Leave reason,Approved,0,DaniReyn,
+8073,AmyBarn,12,5,12/5/2024,15,15/5/2024,2,Leave reason,Rejected,0,JaneKell,
+2362,AndrGray,2,7,2/7/2024,4,4/7/2024,1,Leave reason,Deleted,0,EricLope,
+2362,AndrGray,15,11,15/11/2024,16,16/11/2024,3,Leave reason,Approved,0,JaimChen,
+9970,AngeFrit,27,10,27/10/2024,28,28/10/2024,3,Leave reason,Applied,1,JosePric,(65) 94438327
+9970,AngeFrit,5,9,5/9/2024,6,6/9/2024,2,Leave reason,Applied,0,JacoSoto,
+9970,AngeFrit,11,2,11/2/2024,13,13/2/2024,3,Leave reason,Cancelled,1,KellLong,(94) 79208131
+9970,AngeFrit,26,1,26/1/2024,28,28/1/2024,3,Leave reason,Deleted,0,ConnWise,
+1684,AnneMitc,19,12,19/12/2024,20,20/12/2024,3,Leave reason,Applied,1,AaroReyn,(61) 91447096
+1684,AnneMitc,3,3,3/3/2024,6,6/3/2024,3,Leave reason,Approved,1,StepGilb,(65) 84568982
+4848,AnneWest,13,5,13/5/2024,15,15/5/2024,3,Leave reason,Cancelled,1,DianBrow,(44) 14297943
+4848,AnneWest,8,4,8/4/2024,11,11/4/2024,3,Leave reason,Approved,0,AmanDavi,
+4848,AnneWest,17,7,17/7/2024,20,20/7/2024,1,Leave reason,Deleted,0,EmmaTate,
+1808,AnthChan,18,8,18/8/2024,19,19/8/2024,3,Leave reason,Cancelled,0,AnthGuti,
+1808,AnthChan,24,11,24/11/2024,27,27/11/2024,1,Leave reason,Cancelled,1,EmmaTate,(19) 13569895
+6199,AnthGuti,9,1,9/1/2024,12,12/1/2024,3,Leave reason,Deleted,1,JaimChen,(62) 30463213
+8735,BenjWell,28,11,28/11/2024,28,28/11/2024,1,Leave reason,Applied,0,CindGrah,
+8735,BenjWell,13,5,13/5/2024,14,14/5/2024,1,Leave reason,Deleted,1,StepGilb,(58) 35219837
+8735,BenjWell,19,12,19/12/2024,20,20/12/2024,3,Leave reason,Cancelled,1,JessEspi,(98) 42603517
+3630,BobbKlei,23,8,23/8/2024,26,26/8/2024,2,Leave reason,Deleted,1,MichLee,(84) 40308359
+3630,BobbKlei,15,7,15/7/2024,17,17/7/2024,1,Leave reason,Cancelled,1,LeeSext,(89) 65281554
+8488,BonnBray,19,6,19/6/2024,21,21/6/2024,2,Leave reason,Approved,1,JosePric,(20) 93504281
+7897,BranMyer,12,9,12/9/2024,13,13/9/2024,2,Leave reason,Applied,0,SusaHarv,
+7897,BranMyer,14,2,14/2/2024,15,15/2/2024,1,Leave reason,Deleted,0,CoreFull,
+7897,BranMyer,27,12,27/12/2024,28,28/12/2024,1,Leave reason,Rejected,0,StepFost,
+3926,BranRich,2,3,2/3/2024,3,3/3/2024,1,Leave reason,Approved,0,RebeNewt,
+3926,BranRich,12,3,12/3/2024,14,14/3/2024,1,Leave reason,Applied,0,JasoJame,
+2504,BriaAnde,18,3,18/3/2024,20,20/3/2024,3,Leave reason,Cancelled,0,PatrJone,
+2504,BriaAnde,4,8,4/8/2024,7,7/8/2024,1,Leave reason,Applied,0,BobbKlei,
+2504,BriaAnde,26,1,26/1/2024,28,28/1/2024,3,Leave reason,Cancelled,1,AdamAgui,(28) 35375048
+2504,BriaAnde,20,6,20/6/2024,21,21/6/2024,1,Leave reason,Applied,0,AaroReyn,
+4689,BritWell,19,12,19/12/2024,20,20/12/2024,3,Leave reason,Applied,0,BonnBray,
+4689,BritWell,15,6,15/6/2024,17,17/6/2024,3,Leave reason,Applied,1,AnthGuti,(10) 59498138
+4689,BritWell,5,7,5/7/2024,8,8/7/2024,3,Leave reason,Applied,0,BriaAnde,
+6132,ChelHayn,17,9,17/9/2024,19,19/9/2024,1,Leave reason,Rejected,1,ChriGome,(56) 80534268
+6132,ChelHayn,2,9,2/9/2024,4,4/9/2024,3,Leave reason,Applied,1,JacoSoto,(46) 93369647
+1319,ChriGome,5,12,5/12/2024,7,7/12/2024,2,Leave reason,Rejected,1,AmanDavi,(99) 37282790
+1319,ChriGome,15,9,15/9/2024,17,17/9/2024,2,Leave reason,Applied,0,PatrCook,
+3228,ChriHern,11,9,11/9/2024,13,13/9/2024,1,Leave reason,Deleted,0,AdamAgui,
+3228,ChriHern,6,7,6/7/2024,9,9/7/2024,3,Leave reason,Applied,1,ChriGome,(45) 57986021
+3228,ChriHern,4,11,4/11/2024,7,7/11/2024,1,Leave reason,Cancelled,1,FranRile,(79) 97764015
+3228,ChriHern,1,9,1/9/2024,3,3/9/2024,3,Leave reason,Cancelled,0,JessEspi,
+5112,ChriSand,8,6,8/6/2024,11,11/6/2024,3,Leave reason,Deleted,1,DianBrow,(68) 49353355
+5112,ChriSand,13,6,13/6/2024,16,16/6/2024,1,Leave reason,Cancelled,1,NancGarc,(65) 24241387
+6766,ChriThom,14,6,14/6/2024,16,16/6/2024,1,Leave reason,Approved,0,ChriHern,
+6766,ChriThom,24,3,24/3/2024,26,26/3/2024,1,Leave reason,Applied,0,AnthChan,
+6766,ChriThom,26,12,26/12/2024,27,27/12/2024,1,Leave reason,Deleted,0,KellLong,
+1363,CindGrah,21,9,21/9/2024,23,23/9/2024,1,Leave reason,Rejected,1,JasoJame,(19) 78283138
+1363,CindGrah,11,9,11/9/2024,13,13/9/2024,2,Leave reason,Approved,1,BranRich,(50) 59332543
+1363,CindGrah,20,9,20/9/2024,22,22/9/2024,3,Leave reason,Applied,1,KimbBara,(69) 86177261
+9219,CollMoor,13,5,13/5/2024,15,15/5/2024,2,Leave reason,Approved,1,StepFost,(18) 78282361
+9219,CollMoor,12,9,12/9/2024,15,15/9/2024,2,Leave reason,Applied,0,BonnBray,
+9918,ConnWise,20,12,20/12/2024,23,23/12/2024,1,Leave reason,Approved,0,CoreFull,
+9918,ConnWise,17,1,17/1/2024,19,19/1/2024,2,Leave reason,Deleted,0,RebeNewt,
+9918,ConnWise,3,4,3/4/2024,5,5/4/2024,1,Leave reason,Deleted,1,KateFull,(92) 39139346
+4669,CoreFull,6,3,6/3/2024,7,7/3/2024,2,Leave reason,Deleted,1,JoanMill,(53) 50771815
+4669,CoreFull,28,9,28/9/2024,28,28/9/2024,3,Leave reason,Rejected,0,JoseColl,
+6379,CoryReed,24,3,24/3/2024,26,26/3/2024,3,Leave reason,Cancelled,0,DeboMann,
+6379,CoryReed,13,5,13/5/2024,15,15/5/2024,1,Leave reason,Deleted,1,WillTorr,(42) 78567043
+6379,CoryReed,23,6,23/6/2024,25,25/6/2024,3,Leave reason,Cancelled,1,CoryReed,(36) 13968613
+3656,DaniReyn,18,3,18/3/2024,19,19/3/2024,2,Leave reason,Approved,1,KateFull,(92) 18877159
+3656,DaniReyn,8,11,8/11/2024,10,10/11/2024,2,Leave reason,Approved,0,JennWrig,
+9859,DaviBear,13,5,13/5/2024,16,16/5/2024,3,Leave reason,Deleted,1,BobbKlei,(86) 86842043
+9859,DaviBear,12,11,12/11/2024,13,13/11/2024,3,Leave reason,Approved,0,AnthChan,
+9859,DaviBear,18,4,18/4/2024,19,19/4/2024,3,Leave reason,Cancelled,1,DonnJenn,(99) 55401491
+9859,DaviBear,22,3,22/3/2024,24,24/3/2024,1,Leave reason,Cancelled,0,ChriSand,
+9425,DaviKell,27,12,27/12/2024,28,28/12/2024,3,Leave reason,Applied,1,AmanDavi,(43) 23104342
+9425,DaviKell,1,10,1/10/2024,4,4/10/2024,3,Leave reason,Deleted,0,AmanDavi,
+9425,DaviKell,13,4,13/4/2024,15,15/4/2024,2,Leave reason,Rejected,0,JasoJame,
+8126,DeboMann,13,7,13/7/2024,15,15/7/2024,3,Leave reason,Approved,1,NathAnde,(93) 85961952
+8126,DeboMann,3,5,3/5/2024,4,4/5/2024,2,Leave reason,Rejected,1,PatrPark,(28) 76565711
+8126,DeboMann,24,7,24/7/2024,27,27/7/2024,1,Leave reason,Approved,0,PerrHuds,
+9020,DianBrow,22,2,22/2/2024,25,25/2/2024,1,Leave reason,Rejected,0,StepFost,
+9020,DianBrow,1,1,1/1/2024,3,3/1/2024,2,Leave reason,Cancelled,1,CollMoor,(90) 18419541
+9020,DianBrow,27,4,27/4/2024,28,28/4/2024,1,Leave reason,Approved,1,NathAnde,(87) 40414613
+9020,DianBrow,15,12,15/12/2024,18,18/12/2024,3,Leave reason,Cancelled,0,AngeFrit,
+1270,DianWalk,18,9,18/9/2024,20,20/9/2024,1,Leave reason,Cancelled,0,ChriSand,
+1270,DianWalk,22,7,22/7/2024,23,23/7/2024,2,Leave reason,Rejected,1,CoryReed,(64) 21545445
+8103,DonaMorr,5,1,5/1/2024,8,8/1/2024,1,Leave reason,Applied,0,DonaMorr,
+8103,DonaMorr,6,1,6/1/2024,9,9/1/2024,3,Leave reason,Approved,1,ZachKell,(73) 36513091
+4905,DonaShor,2,7,2/7/2024,5,5/7/2024,1,Leave reason,Rejected,1,JeffCamp,(60) 57862630
+9100,DonnJenn,3,7,3/7/2024,4,4/7/2024,3,Leave reason,Approved,0,BobbKlei,
+9100,DonnJenn,18,8,18/8/2024,21,21/8/2024,1,Leave reason,Deleted,0,DaviKell,
+9977,EmmaGrif,23,8,23/8/2024,24,24/8/2024,1,Leave reason,Approved,0,ConnWise,
+9977,EmmaGrif,11,4,11/4/2024,13,13/4/2024,3,Leave reason,Rejected,0,PerrHuds,
+9977,EmmaGrif,13,5,13/5/2024,14,14/5/2024,2,Leave reason,Deleted,1,JosePric,(54) 11669411
+4831,EmmaTate,1,5,1/5/2024,4,4/5/2024,2,Leave reason,Deleted,1,SivaMapo,(97) 69158428
+4831,EmmaTate,10,4,10/4/2024,13,13/4/2024,1,Leave reason,Approved,1,ZachElli,(44) 78254760
+4831,EmmaTate,5,11,5/11/2024,7,7/11/2024,3,Leave reason,Deleted,1,AngeFrit,(38) 33757944
+4831,EmmaTate,13,11,13/11/2024,16,16/11/2024,1,Leave reason,Cancelled,1,CollMoor,(53) 17957612
+2614,EricJohn,20,4,20/4/2024,23,23/4/2024,3,Leave reason,Deleted,1,SusaHarv,(25) 58757014
+2614,EricJohn,1,9,1/9/2024,2,2/9/2024,1,Leave reason,Approved,0,JustMill,
+3877,EricLope,7,10,7/10/2024,10,10/10/2024,1,Leave reason,Applied,0,TinaBarn,
+3877,EricLope,1,10,1/10/2024,4,4/10/2024,3,Leave reason,Approved,0,DonnJenn,
+3374,FranRile,1,3,1/3/2024,2,2/3/2024,2,Leave reason,Applied,0,KellLong,
+3374,FranRile,18,12,18/12/2024,21,21/12/2024,2,Leave reason,Rejected,0,AngeFrit,
+3374,FranRile,6,4,6/4/2024,8,8/4/2024,2,Leave reason,Deleted,0,ChriThom,
+6091,GeorBolt,17,3,17/3/2024,18,18/3/2024,2,Leave reason,Approved,1,ChelHayn,(22) 50338020
+6091,GeorBolt,3,12,3/12/2024,6,6/12/2024,3,Leave reason,Cancelled,0,JoanMill,
+4946,GlenSand,10,2,10/2/2024,13,13/2/2024,1,Leave reason,Cancelled,1,SusaHarv,(17) 31812994
+4946,GlenSand,7,2,7/2/2024,9,9/2/2024,1,Leave reason,Deleted,1,JessEspi,(87) 56792491
+7662,HeatCars,16,6,16/6/2024,19,19/6/2024,1,Leave reason,Deleted,0,ReneLamb,
+7662,HeatCars,4,11,4/11/2024,6,6/11/2024,1,Leave reason,Cancelled,0,JeffFran,
+7662,HeatCars,28,1,28/1/2024,28,28/1/2024,2,Leave reason,Deleted,0,DaniReyn,
+7662,HeatCars,4,2,4/2/2024,6,6/2/2024,2,Leave reason,Applied,0,JacoSoto,
+7098,HelePage,3,6,3/6/2024,6,6/6/2024,3,Leave reason,Cancelled,1,BobbKlei,(79) 49963323
+6777,JacoSoto,23,2,23/2/2024,26,26/2/2024,1,Leave reason,Approved,0,DeboMann,
+6777,JacoSoto,6,4,6/4/2024,9,9/4/2024,2,Leave reason,Rejected,1,PatrEdwa,(47) 76554574
+6777,JacoSoto,12,1,12/1/2024,15,15/1/2024,1,Leave reason,Rejected,1,AnthChan,(24) 33277970
+6777,JacoSoto,27,4,27/4/2024,28,28/4/2024,1,Leave reason,Approved,1,DianWalk,(62) 69467580
+5931,JaimChen,21,5,21/5/2024,24,24/5/2024,2,Leave reason,Deleted,0,ChriSand,
+5931,JaimChen,3,4,3/4/2024,4,4/4/2024,3,Leave reason,Rejected,1,StepFost,(15) 21797543
+5769,JameWade,22,8,22/8/2024,25,25/8/2024,2,Leave reason,Cancelled,1,TonyClar,(83) 99321014
+5769,JameWade,8,5,8/5/2024,9,9/5/2024,2,Leave reason,Approved,1,AnthGuti,(40) 61251870
+4578,JamiDunn,21,7,21/7/2024,23,23/7/2024,2,Leave reason,Deleted,0,PatrJone,
+4578,JamiDunn,24,7,24/7/2024,26,26/7/2024,1,Leave reason,Rejected,1,JonaChav,(26) 19338832
+4578,JamiDunn,27,9,27/9/2024,28,28/9/2024,2,Leave reason,Deleted,0,EricJohn,
+9961,JaneKell,26,2,26/2/2024,28,28/2/2024,3,Leave reason,Cancelled,1,DonaMorr,(18) 25929019
+9961,JaneKell,21,3,21/3/2024,22,22/3/2024,1,Leave reason,Applied,0,FranRile,
+9961,JaneKell,17,3,17/3/2024,19,19/3/2024,3,Leave reason,Approved,0,FranRile,
+9961,JaneKell,22,7,22/7/2024,23,23/7/2024,1,Leave reason,Cancelled,0,ZachElli,
+9361,JasoJame,25,4,25/4/2024,26,26/4/2024,2,Leave reason,Deleted,0,MarcOwen,
+6079,JeffCamp,3,11,3/11/2024,4,4/11/2024,1,Leave reason,Approved,1,JonaChav,(16) 70614663
+4324,JeffFran,7,2,7/2/2024,10,10/2/2024,3,Leave reason,Applied,1,AnthGuti,(82) 24657991
+4324,JeffFran,19,3,19/3/2024,20,20/3/2024,2,Leave reason,Approved,1,EmmaGrif,(42) 48653051
+4324,JeffFran,17,7,17/7/2024,19,19/7/2024,3,Leave reason,Cancelled,1,AmanPhil,(70) 91379535
+4200,JennWrig,25,4,25/4/2024,28,28/4/2024,3,Leave reason,Deleted,0,CindGrah,
+4200,JennWrig,17,5,17/5/2024,19,19/5/2024,2,Leave reason,Deleted,0,MarcOwen,
+4200,JennWrig,16,6,16/6/2024,17,17/6/2024,3,Leave reason,Approved,1,RichLope,(26) 40405876
+8448,JessBail,28,1,28/1/2024,28,28/1/2024,1,Leave reason,Applied,0,DeboMann,
+5831,JessEspi,20,12,20/12/2024,22,22/12/2024,1,Leave reason,Approved,1,AaroReyn,(89) 26762553
+5831,JessEspi,13,4,13/4/2024,15,15/4/2024,2,Leave reason,Cancelled,0,BobbKlei,
+9876,JoanMill,8,1,8/1/2024,10,10/1/2024,3,Leave reason,Applied,0,JosePric,
+9876,JoanMill,7,7,7/7/2024,8,8/7/2024,2,Leave reason,Applied,0,DonaMorr,
+9876,JoanMill,12,6,12/6/2024,15,15/6/2024,3,Leave reason,Cancelled,0,EmmaGrif,
+9832,JohnVega,21,1,21/1/2024,22,22/1/2024,1,Leave reason,Approved,0,LeeSext,
+9832,JohnVega,6,4,6/4/2024,9,9/4/2024,3,Leave reason,Applied,0,DonaMorr,
+9832,JohnVega,7,4,7/4/2024,10,10/4/2024,2,Leave reason,Deleted,1,TonyClar,(92) 69309556
+9832,JohnVega,4,6,4/6/2024,7,7/6/2024,1,Leave reason,Rejected,0,AnthGuti,
+4447,JonaChav,2,7,2/7/2024,4,4/7/2024,1,Leave reason,Approved,0,KeviJohn,
+4447,JonaChav,24,1,24/1/2024,27,27/1/2024,1,Leave reason,Cancelled,1,AndrGray,(94) 81538537
+4447,JonaChav,26,6,26/6/2024,28,28/6/2024,2,Leave reason,Deleted,0,JoseColl,
+3253,JoseColl,14,10,14/10/2024,15,15/10/2024,3,Leave reason,Applied,0,TonyClar,
+3253,JoseColl,28,5,28/5/2024,28,28/5/2024,1,Leave reason,Applied,1,StepFost,(57) 24863355
+3253,JoseColl,27,4,27/4/2024,28,28/4/2024,2,Leave reason,Deleted,1,PatrPark,(54) 46785084
+3253,JoseColl,19,3,19/3/2024,20,20/3/2024,3,Leave reason,Approved,0,HelePage,
+2707,JosePric,26,4,26/4/2024,27,27/4/2024,2,Leave reason,Deleted,0,JennWrig,
+6605,JustMill,14,9,14/9/2024,16,16/9/2024,2,Leave reason,Applied,0,BonnBray,
+6605,JustMill,2,2,2/2/2024,4,4/2/2024,1,Leave reason,Cancelled,0,ConnWise,
+6605,JustMill,7,9,7/9/2024,10,10/9/2024,2,Leave reason,Approved,0,KateFull,
+9726,KateFull,3,3,3/3/2024,4,4/3/2024,1,Leave reason,Approved,0,MichLam,
+9726,KateFull,17,6,17/6/2024,20,20/6/2024,2,Leave reason,Deleted,0,BenjWell,
+9726,KateFull,9,5,9/5/2024,11,11/5/2024,2,Leave reason,Approved,0,KateFull,
+3788,KellLong,21,6,21/6/2024,22,22/6/2024,1,Leave reason,Deleted,0,TonyClar,
+3788,KellLong,11,7,11/7/2024,12,12/7/2024,3,Leave reason,Applied,1,JeffCamp,(37) 72721452
+3788,KellLong,28,4,28/4/2024,28,28/4/2024,2,Leave reason,Applied,0,WarrWats,
+3788,KellLong,23,2,23/2/2024,24,24/2/2024,3,Leave reason,Approved,1,SamuStew,(70) 91685584
+3677,KerrGarc,23,10,23/10/2024,26,26/10/2024,3,Leave reason,Approved,0,DianWalk,
+3677,KerrGarc,7,3,7/3/2024,10,10/3/2024,2,Leave reason,Applied,0,AnneWest,
+3677,KerrGarc,11,11,11/11/2024,12,12/11/2024,3,Leave reason,Deleted,0,ChriThom,
+7328,KeviJohn,2,2,2/2/2024,5,5/2/2024,2,Leave reason,Rejected,0,KeviPerk,
+7328,KeviJohn,20,4,20/4/2024,21,21/4/2024,3,Leave reason,Deleted,1,ConnWise,(95) 17625585
+7328,KeviJohn,23,11,23/11/2024,26,26/11/2024,3,Leave reason,Deleted,0,RobeWolf,
+7328,KeviJohn,6,9,6/9/2024,7,7/9/2024,3,Leave reason,Rejected,0,NancGarc,
+6628,KeviPerk,12,10,12/10/2024,14,14/10/2024,3,Leave reason,Rejected,1,JameWade,(42) 48946581
+6628,KeviPerk,12,8,12/8/2024,15,15/8/2024,2,Leave reason,Applied,1,JessBail,(89) 78767171
+7028,KimbBara,11,5,11/5/2024,13,13/5/2024,1,Leave reason,Applied,0,JamiDunn,
+7028,KimbBara,3,8,3/8/2024,5,5/8/2024,2,Leave reason,Deleted,1,ReneLamb,(94) 55579376
+7028,KimbBara,18,8,18/8/2024,19,19/8/2024,3,Leave reason,Cancelled,0,ChriGome,
+8545,LeeSext,13,7,13/7/2024,15,15/7/2024,1,Leave reason,Deleted,0,TinaBarn,
+8545,LeeSext,14,6,14/6/2024,17,17/6/2024,2,Leave reason,Approved,0,RebeNewt,
+6840,MarcOwen,14,9,14/9/2024,15,15/9/2024,3,Leave reason,Applied,1,ReneLamb,(26) 67354868
+6840,MarcOwen,28,10,28/10/2024,28,28/10/2024,1,Leave reason,Deleted,1,ReneLamb,(75) 59155044
+6840,MarcOwen,3,5,3/5/2024,4,4/5/2024,2,Leave reason,Deleted,1,JaneKell,(37) 94143652
+8829,MichLam,14,8,14/8/2024,15,15/8/2024,2,Leave reason,Cancelled,1,SusaHarv,(85) 53149112
+8829,MichLam,4,4,4/4/2024,5,5/4/2024,3,Leave reason,Applied,1,AmyBarn,(13) 15209861
+1926,MichLee,25,9,25/9/2024,27,27/9/2024,2,Leave reason,Rejected,0,TonyClar,
+4606,MichWall,11,10,11/10/2024,13,13/10/2024,1,Leave reason,Cancelled,1,PatrEdwa,(78) 60653653
+5914,NancGarc,23,5,23/5/2024,26,26/5/2024,3,Leave reason,Rejected,0,HeatCars,
+5249,NathAnde,1,11,1/11/2024,2,2/11/2024,3,Leave reason,Deleted,1,WillTorr,(29) 41772717
+5249,NathAnde,22,7,22/7/2024,23,23/7/2024,2,Leave reason,Rejected,0,StepFost,
+5249,NathAnde,21,7,21/7/2024,23,23/7/2024,2,Leave reason,Applied,1,GeorBolt,(22) 10212699
+5249,NathAnde,21,9,21/9/2024,23,23/9/2024,3,Leave reason,Cancelled,1,ShelBass,(34) 69472895
+1994,PatrCook,8,6,8/6/2024,10,10/6/2024,1,Leave reason,Applied,0,BranRich,
+1994,PatrCook,8,3,8/3/2024,11,11/3/2024,1,Leave reason,Cancelled,0,JeffFran,
+1994,PatrCook,16,7,16/7/2024,17,17/7/2024,1,Leave reason,Cancelled,1,DaviBear,(59) 90139127
+5491,PatrEdwa,12,1,12/1/2024,15,15/1/2024,3,Leave reason,Approved,1,KimbBara,(54) 70874819
+5491,PatrEdwa,16,3,16/3/2024,19,19/3/2024,2,Leave reason,Cancelled,0,JennWrig,
+2452,PatrJone,13,1,13/1/2024,15,15/1/2024,3,Leave reason,Cancelled,1,ReneLamb,(77) 15808790
+2452,PatrJone,19,6,19/6/2024,22,22/6/2024,1,Leave reason,Rejected,1,JamiDunn,(44) 38652272
+2452,PatrJone,28,1,28/1/2024,28,28/1/2024,2,Leave reason,Cancelled,0,JustMill,
+6056,PatrPark,17,7,17/7/2024,18,18/7/2024,3,Leave reason,Cancelled,0,ConnWise,
+6056,PatrPark,6,1,6/1/2024,9,9/1/2024,2,Leave reason,Deleted,1,DaviKell,(15) 39945334
+6056,PatrPark,27,3,27/3/2024,28,28/3/2024,3,Leave reason,Deleted,1,JohnVega,(20) 83874085
+6056,PatrPark,6,7,6/7/2024,7,7/7/2024,2,Leave reason,Cancelled,0,BonnBray,
+9098,PerrHuds,9,12,9/12/2024,10,10/12/2024,2,Leave reason,Rejected,1,DaviBear,(44) 58961113
+9098,PerrHuds,4,8,4/8/2024,6,6/8/2024,1,Leave reason,Approved,1,JoanMill,(95) 31286247
+3502,RebeNewt,13,2,13/2/2024,15,15/2/2024,3,Leave reason,Applied,1,JacoSoto,(80) 46629284
+3502,RebeNewt,25,8,25/8/2024,27,27/8/2024,2,Leave reason,Rejected,1,JonaChav,(16) 63971335
+3502,RebeNewt,11,3,11/3/2024,13,13/3/2024,2,Leave reason,Approved,1,BranMyer,(70) 48862152
+3502,RebeNewt,23,3,23/3/2024,24,24/3/2024,2,Leave reason,Deleted,0,RichLope,
+3135,ReneLamb,14,11,14/11/2024,17,17/11/2024,2,Leave reason,Applied,0,JaneKell,
+3135,ReneLamb,10,11,10/11/2024,12,12/11/2024,2,Leave reason,Rejected,0,TinaBarn,
+3135,ReneLamb,6,3,6/3/2024,9,9/3/2024,2,Leave reason,Cancelled,0,PatrCook,
+6321,RichLope,13,5,13/5/2024,16,16/5/2024,1,Leave reason,Applied,1,ChriHern,(22) 34323875
+6321,RichLope,9,12,9/12/2024,11,11/12/2024,3,Leave reason,Cancelled,1,ZachKell,(31) 92276134
+6321,RichLope,11,5,11/5/2024,12,12/5/2024,1,Leave reason,Applied,0,WarrWats,
+5930,RobeWolf,1,12,1/12/2024,2,2/12/2024,3,Leave reason,Rejected,0,StepFost,
+5930,RobeWolf,20,5,20/5/2024,21,21/5/2024,2,Leave reason,Cancelled,1,ReneLamb,(99) 46127030
+4760,SamuStew,1,11,1/11/2024,3,3/11/2024,2,Leave reason,Rejected,0,BobbKlei,
+4760,SamuStew,20,8,20/8/2024,22,22/8/2024,2,Leave reason,Rejected,0,JaneKell,
+6549,ShelBass,2,11,2/11/2024,5,5/11/2024,1,Leave reason,Approved,0,MichLam,
+6549,ShelBass,8,10,8/10/2024,10,10/10/2024,1,Leave reason,Deleted,0,HelePage,
+6703,ShelWill,1,10,1/10/2024,4,4/10/2024,3,Leave reason,Rejected,1,DianBrow,(97) 58334817
+6703,ShelWill,10,5,10/5/2024,11,11/5/2024,2,Leave reason,Approved,0,RichLope,
+6703,ShelWill,18,8,18/8/2024,20,20/8/2024,2,Leave reason,Approved,1,KateFull,(27) 20298615
+6703,ShelWill,16,1,16/1/2024,18,18/1/2024,2,Leave reason,Approved,0,BriaAnde,
+4794,SivaMapo,18,6,18/6/2024,21,21/6/2024,2,Leave reason,Cancelled,0,ShelWill,
+4794,SivaMapo,9,1,9/1/2024,10,10/1/2024,2,Leave reason,Approved,1,ReneLamb,(38) 22481023
+5552,StepFost,10,1,10/1/2024,13,13/1/2024,2,Leave reason,Deleted,1,ConnWise,(20) 90287579
+5552,StepFost,10,3,10/3/2024,12,12/3/2024,1,Leave reason,Applied,1,MichWall,(72) 94187077
+5552,StepFost,17,7,17/7/2024,19,19/7/2024,1,Leave reason,Deleted,1,ChriThom,(95) 39944074
+5552,StepFost,8,10,8/10/2024,10,10/10/2024,3,Leave reason,Approved,1,MichLee,(66) 65231069
+9459,StepGilb,19,5,19/5/2024,20,20/5/2024,3,Leave reason,Deleted,0,VeroSmit,
+9459,StepGilb,7,10,7/10/2024,8,8/10/2024,1,Leave reason,Cancelled,0,BriaAnde,
+9459,StepGilb,12,10,12/10/2024,15,15/10/2024,2,Leave reason,Applied,0,JessBail,
+9459,StepGilb,16,1,16/1/2024,17,17/1/2024,3,Leave reason,Rejected,1,AnneWest,(61) 96729145
+1896,SusaHarv,3,1,3/1/2024,6,6/1/2024,3,Leave reason,Cancelled,1,AnneWest,(22) 11602280
+1896,SusaHarv,14,11,14/11/2024,16,16/11/2024,1,Leave reason,Cancelled,1,BriaAnde,(67) 81424458
+1896,SusaHarv,18,8,18/8/2024,21,21/8/2024,2,Leave reason,Applied,0,FranRile,
+4523,TinaBarn,26,2,26/2/2024,28,28/2/2024,1,Leave reason,Deleted,1,StepFost,(50) 53535360
+4523,TinaBarn,21,6,21/6/2024,24,24/6/2024,1,Leave reason,Deleted,1,ChriHern,(64) 57518054
+4814,TonyClar,18,8,18/8/2024,20,20/8/2024,1,Leave reason,Cancelled,0,ShelBass,
+4814,TonyClar,9,3,9/3/2024,10,10/3/2024,2,Leave reason,Rejected,0,MichLee,
+4814,TonyClar,7,2,7/2/2024,8,8/2/2024,2,Leave reason,Rejected,1,CoreFull,(69) 78565770
+7267,VeroSmit,11,5,11/5/2024,12,12/5/2024,2,Leave reason,Deleted,1,EmmaGrif,(56) 19307734
+7267,VeroSmit,19,5,19/5/2024,20,20/5/2024,3,Leave reason,Applied,0,AnthChan,
+7267,VeroSmit,4,8,4/8/2024,7,7/8/2024,3,Leave reason,Cancelled,0,MichWall,
+7267,VeroSmit,6,1,6/1/2024,7,7/1/2024,2,Leave reason,Applied,0,BonnBray,
+1760,WarrWats,2,6,2/6/2024,4,4/6/2024,2,Leave reason,Approved,0,EmmaGrif,
+1760,WarrWats,6,10,6/10/2024,7,7/10/2024,1,Leave reason,Cancelled,1,JeffCamp,(92) 77156557
+1760,WarrWats,7,2,7/2/2024,8,8/2/2024,2,Leave reason,Rejected,1,KeviPerk,(88) 15691896
+1760,WarrWats,23,6,23/6/2024,25,25/6/2024,2,Leave reason,Applied,0,SivaMapo,
+1360,WillTorr,27,11,27/11/2024,28,28/11/2024,1,Leave reason,Deleted,1,WillTorr,(14) 28272387
+1360,WillTorr,18,8,18/8/2024,19,19/8/2024,1,Leave reason,Applied,0,ChriHern,
+6920,ZachElli,19,12,19/12/2024,21,21/12/2024,1,Leave reason,Rejected,0,BobbKlei,
+6920,ZachElli,5,10,5/10/2024,8,8/10/2024,1,Leave reason,Cancelled,0,JohnVega,
+1693,ZachKell,23,6,23/6/2024,25,25/6/2024,3,Leave reason,Cancelled,0,ShelWill,
+1693,ZachKell,19,6,19/6/2024,20,20/6/2024,3,Leave reason,Cancelled,1,BonnBray,(61) 42495378
+1693,ZachKell,2,4,2/4/2024,4,4/4/2024,2,Leave reason,Deleted,0,AmanDavi,

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Selected Employee Leave History</title>
+	<style th:fragment="style">
+		table {
+			border-collapse: collapse;
+			width: 40%;
+			margin: auto;
+		}
+
+		th,
+		td {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+
+		th {
+			background-color: #c0c0c0;
+		}
+
+		tr:nth-child(odd) {
+			background-color: #ffe6f0;
+		}
+
+		tr:nth-child(even) {
+			background-color: #c6e2ff;
+		}
+
+		.blank-row {
+			background-color: #ffffff;
+		}
+
+		.view-link {
+			color: #0000FF;
+			text-decoration: none;
+		}
+
+		.view-link:hover {
+			color: #00587a;
+		}
+
+		input[type="text"] {
+			margin-bottom: 15px;
+			background-color: #f0f0f0;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			font-size: 30px;
+			color: #0000FF;
+		}
+
+		form {
+			margin-bottom: 40px;
+			background-color: #f9f9f9;
+		}
+
+		.nav-link {
+			margin-top: 20px;
+			text-decoration: none;
+			color: #0000FF;
+			font-size: 16px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Selected Employee Leave History</h1>
+		<form th:action="@{/manager/searchEmployee}" method="post">
+			<label for="employeeName">Employee Name</label>
+			<input type="text" id="employeeName" name="employeeName">
+			<button type="submit">Search</button>
+		</form>
+		<table>
+			<thead>
+				<tr>
+					<th class="th-header">Employee Name</th>
+					<th class="th-header">Leave History</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:if="${employeesFound}" th:each="employee : ${employees}">
+					<td th:text="${employee.name}"></td>
+					<td>
+						<a th:href="@{/manager/history/{id}(id=${employee.id})}" class="view-link">View</a>
+					</td>
+				</tr>
+				<tr th:if="${!employeesFound}">
+					<td colspan="2" style="text-align: center;">No employees found</td>
+				</tr>
+			</tbody>
+		</table>
+		<a href="/manager/employeeHistory" class="nav-link">Back to Employee History List Page</a>
+	</div>
+</body>
+
+</html>

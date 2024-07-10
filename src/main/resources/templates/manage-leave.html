@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Manage My Leaves</title>
+	<style th:fragment="style">
+		/* CSS styles */
+		table {
+			border-collapse: collapse;
+			width:100%;
+		}
+
+		th,
+		td {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+
+		th {
+			background-color: #f2f2f2;
+			/* Light gray background for column names */
+		}
+
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+			/* Light gray background for even rows */
+		}
+
+		.blank-row {
+			background-color: #ffffff;
+			/* White background for blank rows */
+		}
+	</style>
+</head>
+
+<body th:fragment="body">
+	<div class="container">
+		<h1>Manage My Leaves</h1>
+		<table>
+			<thead>
+				<tr>
+					<th style="background-color: #c0c0c0;">Start</th>
+					<th style="background-color: #c0c0c0;">End</th>
+					<th style="background-color: #c0c0c0;">Type</th>
+					<th style="background-color: #c0c0c0;">Reason</th>
+					<th style="background-color: #c0c0c0;">Status</th>
+					<th style="background-color: #c0c0c0;">Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Use Thymeleaf to display the found employee -->
+				<tr th:each="leave : ${leaves}">
+					<td th:text="${leave.getLocalStartDate()}"></td>
+					<td th:text="${leave.displayEnd()}"></td>
+					<td th:text="${leave.entitlement.leaveType}"></td>
+					<td th:text="${leave.reasons}"></td>
+					<td th:text="${leave.displayStatus()}"></td>
+					<td>
+						<a th:if="${leave.isUpdateable()}" th:href="@{/leave/update-leave/{id}(id=${leave.id})}">Update</a>
+						<span th:if="${!leave.isUpdateable()}" style="color: lightgrey">Update</span> |
+						<a th:if="${leave.isDeletable()}" th:href="@{/leave/delete-leave/{id}(id=${leave.id})}">Delete</a>
+						<span th:if="${!leave.isDeletable()}" style="color: lightgrey">Delete</span> |
+						<a th:if="${leave.isCancellable()}" th:href="@{/leave/cancel-leave/{id}(id=${leave.id})}">Cancel</a>
+						<span th:if="${!leave.isCancellable()}" style="color: lightgrey">Cancel</span>
+						
+					</td>
+					<!--<td>
+						<a th:href="@{/manager/history/{employeeId}(id=${employee.id})}">View</a>
+					</td>-->
+				</tr>
+				
+			</tbody>
+		</table>
+		<a href="/leave/viewleaveHistory" class="nav-link">Back to Employee Leave History</a>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Leave History</title>
+	<style th:fragment="style">
+		/* CSS styles */
+		table {
+			border-collapse: collapse;
+			width:100%;
+		}
+
+		th,
+		td {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+
+		th {
+			background-color: #f2f2f2;
+			/* Light gray background for column names */
+		}
+
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+			/* Light gray background for even rows */
+		}
+
+		.blank-row {
+			background-color: #ffffff;
+			/* White background for blank rows */
+		}
+	</style>
+</head>
+
+<body th:fragment="body">
+	<div class="container">
+		<button class="btn btn-primary" id="toAllLeaves">View All Leaves</button>
+		<h1>My Leave History</h1>
+		<table>
+			<thead>
+				<tr>
+					<th style="background-color: #c0c0c0;">Start</th>
+					<th style="background-color: #c0c0c0;">End</th>
+					<th style="background-color: #c0c0c0;">Type</th>
+					<th style="background-color: #c0c0c0;">Reason</th>
+					<th style="background-color: #c0c0c0;">Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Use Thymeleaf to display the found employee -->
+				<tr th:each="leave : ${leaveHistory}">
+					<td th:text="${leave.getLocalStartDate()}"></td>
+					<td th:text="${leave.displayEnd()}"></td>
+					<td th:text="${leave.entitlement.leaveType}"></td>
+					<td th:text="${leave.reasons}"></td>
+					<td th:text="${leave.displayStatus()}"></td>
+				</tr>
+				
+			</tbody>
+		</table>
+		<br/><br/>
+		<h1>My Claim History</h1>
+				<table>
+					<thead>
+						<tr>
+							<th style="background-color: #c0c0c0;">Date of Claim Submission</th>
+							<th style="background-color: #c0c0c0;">Claim (Days)</th>
+							<th style="background-color: #c0c0c0;">Reason</th>
+							<th style="background-color: #c0c0c0;">Status</th>
+							<th style="background-color: #c0c0c0;">Date Approved</th>
+						</tr>
+					</thead>
+					<tbody>
+
+						<tr th:each="claim : ${claimHistory}">
+							<td th:text="${claim.dateOfSubmission}"></td>
+							<td th:text="${claim.claimDays}"></td>
+							<td th:text="${claim.reasonSupporting}"></td>
+							<td th:text="${claim.displayStatus()}"></td>
+							<td th:text="${claim.showDateApproved()}"></td>
+						</tr>
+						
+					</tbody>
+				</table>
+		<a href="/" class="nav-link">Back to Employee History List Page</a>
+	</div>
+	<script>
+		const element = document.getElementById('toAllLeaves')
+				element.addEventListener('click', (e) => {
+		    		e.preventDefault()
+		    		location.href = 'http://localhost:3000'
+		})
+	</script>
+</body>
+
+</html>

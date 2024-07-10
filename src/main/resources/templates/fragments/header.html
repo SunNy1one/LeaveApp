@@ -1,0 +1,70 @@
+<!--<header th:fragment="header">
+	<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
+		style="background: linear-gradient(rgb(150,150,230), white) ">
+		<div class="container d-flex flex-row justify-content-between align-items-center">
+
+			<div class="navbar-collapse collapse d-sm-inline-flex justify-content-start flex-row align-items-center">
+				<a class="navbar-brand" th:href="@{/}">Leave Application System</a>
+				<span class="nav-item mt-4" th:text="${employeeName}"></span>
+			</div>
+			<div th:if="${isLoggedIn}" class="mt-4"><a href="/logout" style="text-decoration: none; color: black;">Log out</a></div>
+
+
+		</div>
+	</nav>
+</header>-->
+
+<header th:fragment="header">
+
+	<style>
+		.navbar-brand {
+			font-size: 30px;
+			color: blue;
+		}
+
+		.signed-in {
+			color: green;
+		}
+
+		.log-out {
+			color: brown;
+			font-size: 1.2em;
+			text-decoration: none;
+		}
+
+		.log-out:hover {
+			color: red;
+			text-decoration: underline;
+		}
+	</style>
+
+	<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
+		style="background: linear-gradient(rgb(150,150,230), white)">
+
+		<div class="container-fluid">
+			<div class="row">
+				<!-- Logo -->
+				<div class="d-flex">
+					<a class="navbar-brand" th:href="@{/}">
+						Leave Application System
+					</a>
+				</div>
+
+				<!-- Signed-in user -->
+				<div class="d-flex">
+					<span class="navbar-text">signed in as&nbsp;</span>
+					<span class="navbar-text signed-in" th:text="${employeeName}"></span>
+				</div>
+			</div>
+
+			<!-- Log out link -->
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item" th:if="${isLoggedIn}">
+					<a href="/logout" class="log-out">Log out</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+</header>
+

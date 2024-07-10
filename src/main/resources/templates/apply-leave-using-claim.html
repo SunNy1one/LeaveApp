@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Consume Claim Application Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container" th:fragment="submitLeaveAppBody">
+    <h2>Consume Claim Application Form</h2>
+    <form th:action="@{/leave/applyConsumption}" th:object="${leave}" method="post">
+		<input hidden th:field="*{employee}" th:value="${leave.employee.id}"/>
+		<input hidden th:field="*{entitlement}" th:value="${leave.entitlement.id}"/>
+		<div class="form-group">
+			<label for="startDate">Start Date:</label>
+			<input type="date" id="startDate" th:field="*{start}" class="form-control" />
+			<span th:if="${#fields.hasErrors('start')}" th:errors="*{start}" class="inputErrorMessage"></span>
+		</div>
+		
+		<div class="d-flex justify-content-start flex-row">
+			<div class="m-2 d-flex flex-row align-item-center">
+				<input type="checkbox" th:field="*{halfDayLeave}" onchange="toggleHalfDay()" id="halfDayLeave" name="ishalfday"/>
+				<label th:for="${#ids.next('halfDayLeave')}" class="mt-2 ms-2">Half-Day Leave</label>
+			</div>
+						
+			<div class="d-flex flex-row justify-content-start">
+				<div class="m-2 d-flex flex-row align-item-center">
+					<input th:type="radio" th:field="*{halfOfDay}" th:value="${T(sg.nus.iss.com.Leaveapp.model.HalfOfDay).Morning}"
+						id="morningHalf" disabled  />
+					<label for="morningHalf" class="mt-2 ms-2">AM</label>
+				</div>
+				<div class="m-2 d-flex flex-row align-item-center">
+					<input th:type="radio" th:field="*{halfOfDay}" th:value="${T(sg.nus.iss.com.Leaveapp.model.HalfOfDay).Afternoon}"
+						id="afternoonHalf" disabled />
+					<label for="afternoonHalf" class="mt-2 ms-2">PM</label>
+				</div>
+			</div>
+		</div>
+		<span th:if="${#fields.hasErrors('halfDayLeave')}" th:errors="*{halfDayLeave}" class="inputErrorMessage"></span>
+		
+		<div class="form-group">
+			<label for="endDate">End Date:</label>
+			<input type="date" id="endDate" th:field="*{end}" class="form-control" />
+			<span th:if="${#fields.hasErrors('end')}" th:errors="*{end}" class="inputErrorMessage"></span>
+			<span th:if="${#fields.hasErrors('numberOfDays')}" th:errors="*{numberOfDays}" class="inputErrorMessage"></span>
+		</div>
+		
+		<div class="mb-3">
+			<label for="reasons" class="form-label">Reasons</label>
+			<textarea class="form-control" id="reasons" th:field="*{reasons}" rows="3" maxlength="200"></textarea>
+		</div>
+		
+		<div class="mb-3">
+		    <label for="leaveStatus" class="form-label">Supporting Coworker</label>
+			<input type="text" class="form-control" id="SupportingCoworker" th:field="*{nameOfSupportingCoworker}" maxlength="30" required>
+		</div>
+		
+		<br/>
+		<br/>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<script th:inline="javascript">
+	var isHalfDay = /*[[${leave.halfDayLeave}]]*/ false;
+
+	function toggleHalfDay(){
+		isHalfDay = !isHalfDay;
+
+		const morningHalfTag = document.getElementById("morningHalf");
+		const afternoonHalfTag = document.getElementById("afternoonHalf");
+		const endTag = document.getElementById("endDate");
+		const startTag = document.getElementById("startDate");
+		if(isHalfDay){
+			morningHalfTag.removeAttribute("disabled");
+			afternoonHalfTag.removeAttribute("disabled");
+			endTag.setAttribute("disabled", true);
+			endTag.setAttribute("value", startTag.getAttribute("value"));
+		} else {
+			morningHalfTag.setAttribute("disabled", true);
+			afternoonHalfTag.setAttribute("disabled", true);
+			endTag.removeAttribute("disabled");
+		}
+	}
+	window.onload = function(e){
+		const morningHalfTag = document.getElementById("morningHalf");
+		const afternoonHalfTag = document.getElementById("afternoonHalf");
+		const endTag = document.getElementById("endDate");
+		const startTag = document.getElementById("startDate");
+
+		var hd = /*[[${leave.halfDayLeave}]]*/ false;
+		if(hd){
+			
+			morningHalfTag.removeAttribute("disabled");
+			afternoonHalfTag.removeAttribute("disabled");
+			endTag.setAttribute("disabled", true);
+			endTag.setAttribute("value", startTag.getAttribute("value"));
+		}
+		var start = /*[[${leave.start}]]*/ Date.now;
+		var end = /*[[${leave.end}]]*/ Date.now;
+		startTag.setAttribute("value", start);
+		endTag.setAttribute("value", end);
+	}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

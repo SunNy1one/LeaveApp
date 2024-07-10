@@ -1,0 +1,4 @@
+Employee_ID,Username,Password,FirstName,LastName,Email,AnnualLeave,MedicalLeave,CompensationLeave,Role,Manager,ManagerUsername,
+102,KerrGarc,Password,Kerri,Garcia,KerrGarc@mail.com,14,7,0,Manager,17,DeboMann,FALSE
+101,SunSun,Password,Sun,Sun,Sun@gmail.com,15,5,5,Staff,5,KerrGarc,FALSE
+104,DogDog,Password,Dog,Dog,Sun@gmail.com,15,5,5,Staff,6,KerrGarc,FALSE

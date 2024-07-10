@@ -1,0 +1,4 @@
+<div class="side-menu" th:fragment="menu">
+	
+	<a th:each="action : ${actions}" th:text="${action.getDisplayName}" th:href="${action.getUrlPattern}" class="menu-item"></a>
+</div>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Claim Detail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style th:fragment="style">
+		    .status-applied { color: blue; }
+		    .status-rejected { color: red; }
+		    .status-approved { color: green; }
+		    .status-deleted { color: purple; }
+	</style>
+</head>
+<body>
+<div class="container mt-4">
+    <h1 class="mb-4">Claim Detail</h1>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <strong>Employee Name:</strong> <span th:text="${claim.employee.name}"></span>
+        </div>
+        <div class="col-md-6">
+            <strong>Date submitted:</strong> <span th:text="${claim.dateOfSubmission}"></span>
+        </div>
+        
+        <div class="col-md-6">
+            <strong>Reason:</strong> <span th:text="${claim.reasonSupporting}"></span>
+        </div>
+        <div class="col-md-6">
+            <strong>Status:</strong>
+			<span th:switch="${claim.status}">
+				<span th:case="${T(sg.nus.iss.com.Leaveapp.model.LeaveStatus).Applied}" class="status-applied"
+					th:text="${claim.displayStatus()}"></span>
+				<span th:case="${T(sg.nus.iss.com.Leaveapp.model.LeaveStatus).Cancelled}" class="status-cancelled"
+					th:text="${claim.displayStatus()}"></span>
+				<span th:case="${T(sg.nus.iss.com.Leaveapp.model.LeaveStatus).Rejected}" class="status-rejected"
+					th:text="${claim.displayStatus()}"></span>
+				<span th:case="${T(sg.nus.iss.com.Leaveapp.model.LeaveStatus).Approved}" class="status-approved"
+					th:text="${claim.displayStatus()}"></span>
+				<span th:case="${T(sg.nus.iss.com.Leaveapp.model.LeaveStatus).Deleted}" class="status-deleted"
+					th:text="${claim.displayStatus()}"></span>
+			</span>
+        </div>
+		<div class="col-md-6">
+			<strong>Claim:</strong> <span th:text="${claim.claimDays} + ' days'"></span>
+		</div>
+    </div>
+
+    <!-- Approval and Rejection Form -->
+    <div class="mb-3" th:if="${claim.status== 1 ||claim.status==6}">
+        <form method="post" th:action="@{/manager/approveClaim}" th:object="${claim}">
+			<input hidden th:field="*{id}"/>
+			<label >Approve:</label>
+			<input type="number" th:field="*{approvedDays}" step="0.5" th:value="${claim.claimDays}" class="form-input" required/>
+			<button class="btn btn-success" type="submit">Approve</button>
+        </form>
+
+        <form method="post" th:action="@{/manager/rejectClaim}" th:object="${claim}">
+            <input hidden th:field="*{id}"/>
+			<div class="form-group">
+                <label for="comment">Rejection Comment:</label>
+                <textarea id="comment" class="form-control" name="comment" th:field="*{comments}" required></textarea>
+            </div>
+			<br/>
+            <button class="btn btn-danger" type="submit">Reject</button>
+        </form>
+    </div>
+
+    <a class="btn btn-link" th:href="@{/manager/applications}">Back to View Leave Applications</a>
+
+    
+</div>
+</body>
+</html>

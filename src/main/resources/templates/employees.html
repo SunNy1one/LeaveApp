@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Manage Employees</title>
+	<style th:fragment="style">
+	        body {
+	            font-family: Arial, sans-serif;
+	            margin: 0;
+	            padding: 20px;
+	            background-color: #f4f4f4;
+	        }
+	        h1 {
+	            text-align: center;
+	        }
+	        table {
+	            width: 100%;
+	            margin: 20px 0;
+	            border-collapse: collapse;
+	            background: #fff;
+	            border-radius: 8px;
+	            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	        }
+	        th, td {
+	            padding: 10px;
+	            border: 1px solid #ccc;
+	            text-align: left;
+	        }
+	        th {
+	            background-color: #4CAF50;
+	            color: white;
+	        }
+	        tr:nth-child(even) {
+	            background-color: #f2f2f2;
+	        }
+	        a {
+	            color: #4CAF50;
+	            text-decoration: none;
+	        }
+	        a:hover {
+	            text-decoration: underline;
+	        }
+	        .add-employee {
+	            display: block;
+	            margin: 20px 0;
+	            text-align: center;
+	        }
+	        .pagination {
+	            display: flex;
+	            list-style: none;
+	            padding: 0;
+	            justify-content: center;
+	        }
+	        .pagination li {
+	            margin: 0 5px;
+	        }
+	        .pagination a {
+	            color: #4CAF50;
+	            text-decoration: none;
+	            padding: 5px 10px;
+	            border: 1px solid #ccc;
+	            border-radius: 4px;
+	        }
+	        .pagination a:hover {
+	            background-color: #4CAF50;
+	            color: white;
+	        }
+	        .pagination .active a {
+	            background-color: #4CAF50;
+	            color: white;
+	        }
+	        .pagination .disabled a {
+	            color: #ccc;
+	        }
+	    </style>
+
+</head>
+<body th:fragment="employeeBody">
+    <h1>Employees</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="employee : ${employees}">
+                <td th:text="${employee.id}"></td>
+                <td th:text="${employee.name}"></td>
+                <td th:text="${employee.role.name}"></td>
+                <td>
+                    <a th:href="@{/admin/employees/edit/{id}(id=${employee.id})}">Edit</a> |
+                    <a th:href="@{/admin/employees/delete/{id}(id=${employee.id})}">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+	<div th:if="${totalPages > 1}">
+		<ul class="pagination">
+			<li th:class="${currentPage == 0} ? 'disabled' : ''">
+				<a th:if="${currentPage != 0}" th:href="@{/admin/employees(page=${currentPage - 1},size=${size})}"
+					aria-label="Previous">
+					<span aria-hidden="true">&laquo;</span>
+				</a>
+			</li>
+			<li th:each="pageNum : ${#numbers.sequence(0, totalPages - 1)}"
+				th:class="${pageNum == currentPage} ? 'active' : ''">
+				<a th:href="@{/admin/employees(page=${pageNum},size=${size})}" th:text="${pageNum + 1}"></a>
+			</li>
+			<li th:class="${currentPage == totalPages - 1} ? 'disabled' : ''">
+				<a th:if="${currentPage != totalPages - 1}"
+					th:href="@{/admin/employees(page=${currentPage + 1},size=${size})}" aria-label="Next">
+					<span aria-hidden="true">&raquo;</span>
+				</a>
+			</li>
+			</ul>
+	    </div>
+
+    <a href="/admin/employees/add" class="add-employee">Add Employee</a>
+</body>
+</html>

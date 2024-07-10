@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Leave Applications for Approval</title>
+	<style th:fragment="style">
+		table {
+			border-collapse: collapse;
+			width: 30%;
+			margin: 0 auto;
+		}
+
+		th,
+		td {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+
+		th {
+			background-color: #c0c0c0;
+		}
+
+		tr:nth-child(odd) {
+			background-color: #ffe6f0;
+		}
+
+		tr:nth-child(even) {
+			background-color: #c6e2ff;
+		}
+
+		.blank-row {
+			background-color: #ffffff;
+		}
+
+		.view-link {
+			color: #0000FF;
+			text-decoration: none;
+		}
+
+		.view-link:hover {
+			color: #00587a;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			font-size: 30px;
+			color: #0000FF;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Leave Applications for Approval</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Employee Name</th>
+					<th>Leave ID</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:if="${leaveApplications.size() == 0}">
+					<td colspan="3" style="text-align: center;">No employees found</td>
+				</tr>
+				<tr th:each="leaveApplication,iter : ${leaveApplications}">
+					<td th:text="${leaveApplication.employee.name}"></td>
+					<td th:text="${leaveApplication.id}"></td>
+					<td>
+						<a th:href="@{/manager/application-details/{id}(id=${leaveApplication.id})}"
+							class="view-link">View</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<h1>Claim Requests for Approval</h1>
+		<table>
+			<thead>
+				<tr>
+					<th style="background-color: #9090c0;">Date Submitted</th>
+					<th style="background-color: #9090c0;">Employee Name</th>
+					<th style="background-color: #9090c0;">Claim ID</th>
+					<th style="background-color: #9090c0;">Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:if="${claimRequests.size() == 0}">
+					<td colspan="3" style="text-align: center;">No employees found</td>
+				</tr>
+				<!-- Use Thymeleaf to iterate over the leaveApplications list -->
+				<tr th:each="claim,iter : ${claimRequests}">
+					<td th:text="${claim.dateOfSubmission}"></td>
+					<td th:text="${claim.employee.name}"></td>
+					<td th:text="${claim.id}"></td>
+					<td>
+						<a th:href="@{/manager/claim-details/{id}(id=${claim.id})}" class="view-link">View</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>

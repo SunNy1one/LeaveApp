@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Application Details</title>
+	<style th:fragment="style">
+		table {
+			border-collapse: collapse;
+			width: 90%;
+			margin: 0 auto;
+		}
+
+		th,
+		td {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+
+		th {
+			background-color: #c0c0c0;
+		}
+
+		tr:nth-child(odd) {
+			background-color: #ffe6f0;
+		}
+
+		tr:nth-child(even) {
+			background-color: #c6e2ff;
+		}
+
+		.blank-row {
+			background-color: #ffffff;
+		}
+
+		.button {
+			display: inline-block;
+			background-color: #008CBA;
+			color: white;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 0;
+		}
+
+		.button:hover {
+			text-decoration: none;
+			background-color: #00587a;
+		}
+
+		.nav-link {
+			margin-top: 20px;
+			text-decoration: none;
+			color: #0000FF;
+			font-size: 16px;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			font-size: 30px;
+			color: #0000FF;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Application Details</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Employee Name</th>
+					<th>Employee ID</th>
+					<th>Leave ID</th>
+					<th>Start Date</th>
+					<th>End Date</th>
+					<th>Reasons</th>
+					<th>Leave Type</th>
+					
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td >
+						<a th:href="@{/manager/leaveapprove/details/{id}(id=${leaveApplication.id})}" th:text="${leaveApplication.employee.name}"></a>
+					</td>
+					<td th:text="${leaveApplication.employee.id}"></td>
+					<td th:text="${leaveApplication.id}"></td>
+					<td th:text="${leaveApplication.start}"></td>
+					<td th:text="${leaveApplication.end}"></td>
+					<td th:text="${leaveApplication.reasons}"></td>
+					<td th:text="${leaveApplication.entitlement.leaveType}"></td>
+					
+				</tr>
+			</tbody>
+		</table>
+		<a href="/manager/applications" class="nav-link">Back to View Applications for Approval Page</a>
+	</div>
+</body>
+
+</html>

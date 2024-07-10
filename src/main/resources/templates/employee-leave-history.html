@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Employee Leave History</title>
+	<style th:fragment="style">
+		table {
+			border-collapse: collapse;
+			width: 70%;
+			margin: auto;
+		}
+
+		th,
+		td {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+
+		th {
+			background-color: #f2f2f2;
+		}
+
+		tr:nth-child(odd) {
+			background-color: #ffe6f0;
+		}
+
+		tr:nth-child(even) {
+			background-color: #c6e2ff;
+		}
+
+		.blank-row {
+			background-color: #ffffff;
+		}
+
+		.nav-link {
+			margin-top: 20px;
+			text-decoration: none;
+			color: #0000FF;
+			font-size: 16px;
+			text-align: center;
+		}
+
+		.nav-link:hover {
+			color: #00587a;
+		}
+
+		h1 {
+			text-align: center;
+			color: #333;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			font-size: 30px;
+			color: #0000FF;
+		}
+
+		.header-cell {
+			background-color: #c0c0c0;
+		}
+	</style>
+</head>
+
+<body th:fragment="body">
+	<div class="container">
+		<h1>Employee Leave History</h1>
+		<table>
+			<thead>
+				<tr>
+					<th class="header-cell">Name</th>
+					<th class="header-cell">ID</th>
+					<th class="header-cell">Start</th>
+					<th class="header-cell">End</th>
+					<th class="header-cell">Type</th>
+					<th class="header-cell">Reason</th>
+					<th class="header-cell">Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="leave : ${leaveHistory}">
+					<td th:text="${employee.name}"></td>
+					<td th:text="${employee.id}"></td>
+					<td th:text="${leave.start}"></td>
+					<td th:text="${leave.end}"></td>
+					<td th:text="${leave.entitlement.leaveType}"></td>
+					<td th:text="${leave.reasons}"></td>
+					<td th:text="${leave.displayStatus()}"></td>
+				</tr>
+			</tbody>
+		</table>
+		<br/> <br/>
+		<h1>Employee Claim History</h1>
+		<table>
+			<thead>
+				<tr>
+					<th class="header-cell">Name</th>
+					<th class="header-cell">Date submitted</th>
+					<th class="header-cell">Claim</th>
+					<th class="header-cell">Reason</th>
+					<th class="header-cell">Status</th>
+					<th class="header-cell">Date approved</th>
+					<th class="header-cell">Approved Days</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="claim : ${claimHistory}">
+					<td th:text="${employee.name}"></td>
+					<td th:text="${claim.displayDateOfSubmission()}"></td>
+					<td th:text="${claim.claimDays}"></td>
+					<td th:text="${claim.reasonSupporting}"></td>
+					<td th:text="${claim.displayStatus()}"></td>
+					<td th:text="${claim.showDateApproved()}"></td>
+					<td th:text="${claim.approvedDays}"></td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<a href="/manager/employeeHistory" class="nav-link">Back to Employee History List Page</a>
+	</div>
+</body>
+
+</html>

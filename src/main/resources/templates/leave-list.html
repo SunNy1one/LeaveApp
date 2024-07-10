@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>LeaveApproveList</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+	    .status-applied { color: blue; }
+	    .status-rejected { color: red; }
+	    .status-approved { color: green; }
+	    .status-deleted { color: purple; }
+	    .status-cancelled { color: black; }
+		option[value="Applied"] { color: blue; }
+		option[value="Rejected"] { color: red; }
+		option[value="Approved"] { color: green; }
+		option[value="Deleted"] { color: purple; }
+		option[value="Cancelled"] { color: black; }
+	</style>
+</head>
+<body>
+<div class="container">
+
+    <h3>Leave Approve List</h3>
+    <!--<a class="btn btn-primary" href="/leave-applications">Approve list</a>-->
+
+    <!-- Add a form for status selection -->
+    <form th:action="@{/leaveapprove/list}" method="get">
+        <div class="form-group">
+            <label for="status">Filter by Status:</label>
+            <select class="form-control" id="status" name="status">
+                <option value="">--Select a Status--</option>
+                <option value="Applied">Applied</option>
+                <option value="Approved">Approved</option>
+                <option value="Cancelled">Cancelled</option>
+                <option value="Deleted">Deleted</option>
+                <option value="Rejected">Rejected</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-info">Filter</button>
+    </form>
+
+    <table class="table table-striped table-responsive-md">
+        <thead>
+        <tr>
+            <th>Employee</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Reason</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="leave : ${leaves}">
+            <td><a th:href="@{'/leaveapprove/detail'(id=${leave.id})}" th:text="${leave.employee.name}"></a></td>
+            <td th:text="${leave.start}"></td>
+            <td th:text="${leave.end}"></td>
+            <td th:text="${leave.reasons}"></td>
+			<td th:switch="${leave.status}">
+			     <span th:case="${T(sg.nus.iss.com.Leaveapp.model.LeaveStatus).Applied}" class="status-applied" th:text="${leave.status}"></span>
+			     <span th:case="${T(sg.nus.iss.com.Leaveapp.model.LeaveStatus).Rejected}" class="status-rejected" th:text="${leave.status}"></span>
+			     <span th:case="${T(sg.nus.iss.com.Leaveapp.model.LeaveStatus).Approved}" class="status-approved" th:text="${leave.status}"></span>
+			     <span th:case="${T(sg.nus.iss.com.Leaveapp.model.LeaveStatus).Deleted}" class="status-deleted" th:text="${leave.status}"></span>
+			     <span th:case="${T(sg.nus.iss.com.Leaveapp.model.LeaveStatus).Cancelled}" class="status-cancelled" th:text="${leave.status}"></span>
+			</td>
+        </tr>
+        </tbody>
+    </table>
+	
+
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edit Leave Entitlement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"], select, input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #000;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Edit Leave Entitlement</h1>
+    <form th:action="@{/adminEntitlement/leavetypes/edit/save}" th:object="${leaveEntitlement}" method="post">
+        <input hidden th:field="*{id}" />
+		<div>
+            <label>Role:</label>
+            <select th:field="*{role}">
+                <option th:each="role : ${roles}" th:value="${role.id}" th:text="${role.name}" ></option>
+            </select>
+        </div>
+        <div>
+            <label>Type:</label>
+			<input hidden th:field="*{leaveType}" />
+            <p th:field="*{leaveType}" th:text="${leaveEntitlement.leaveType}"></p>
+			
+        </div>
+        <div>
+            <label>No. of Days:</label>
+            <input type="number" th:field="*{numberOfDays}" th:value="${leaveEntitlement.numberOfDays}"/>
+			<span th:if="${#fields.hasErrors('numberOfDays')}" th:errors="*{numberOfDays}" class="inputErrorMessage"></span>
+        </div>
+        
+        <div>
+            <label>Year:</label>
+            <input type="number" th:field="*{year}" th:value="${leaveEntitlement.year}"/>
+			<span th:if="${#fields.hasErrors('year')}" th:errors="*{year}" class="inputErrorMessage"></span>
+        </div>
+        <div>
+            <button type="submit">Save</button>
+        </div>
+    </form>
+    <a href="/adminEntitlement/leavetypes">Back to Leave Entitlements</a>
+</body>
+</html>
